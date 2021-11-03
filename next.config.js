@@ -1,5 +1,9 @@
 module.exports = {
   reactStrictMode: true,
+  env: {
+    TOKEN: process.env.TOKEN,
+    URL_BACKEND: process.env.URL_BACKEND,
+  },
 };
 
 const intercept = require("intercept-stdout");
