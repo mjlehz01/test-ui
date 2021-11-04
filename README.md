@@ -15,10 +15,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 
 ## Agrege algunas cositas mas
-1- En el index agrege un contador de errores, si la peticion falla mas de 3 veces te direcciona a 
-contacto,
-2- Use recoilJs para conservar el estado, lo hace basado en atomos en un app mas grande se aprecia
-su gran rendimiento ya que se apega de hooks, ademas es desarrollador por Facebook.
+1- En el index agrege un contador de errores, si la peticion falla mas de 3 veces te direcciona a contacto.
+2- Use recoilJs para conservar el estado, lo hace basado en atomos en un app mas grande se aprecia su gran rendimiento ya que se apega de hooks, ademas es desarrollador por Facebook.
 3- Use tailwindcss a mi punto de vista es css puro aunque una forma mas comoda de escribir, mas el purgado de css, que me dio 5kb en el Build.
 4-En /api/ tengo la peticion get y en /utils/ tengo una funcion la cual tiene en token.
 5- Las validaciones las logre con custom hook y archivo de validacion para comprobar si es numero, normalmente agregaria el error debajo del input aunque por los requirimientos lo puse en una lista.
