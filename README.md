@@ -1,8 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 
 ## Getting Started
 
-First, run the development server:
+utilize yarn,
 
 ```bash
 npm run dev
@@ -12,23 +12,21 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Agrege algunas cositas mas
+1- En el index agrege un contador de errores, si la peticion falla mas de 3 veces te direcciona a 
+contacto,
+2- Use recoilJs para conservar el estado, lo hace basado en atomos en un app mas grande se aprecia
+su gran rendimiento ya que se apega de hooks, ademas es desarrollador por Facebook.
+3- Use tailwindcss a mi punto de vista es css puro aunque una forma mas comoda de escribir, mas el purgado de css, que me dio 5kb en el Build.
+4-En /api/ tengo la peticion get y en /utils/ tengo una funcion la cual tiene en token.
+5- Las validaciones las logre con custom hook y archivo de validacion para comprobar si es numero, normalmente agregaria el error debajo del input aunque por los requirimientos lo puse en una lista.
+6- Se me dificulto un poco mutar el estado de los items, ya que venia sellado por eso opte por hacer un clon, usando funciones de JSON.
+7- No soy el mejor diseñando, aunque si puedo seguir los diseñor a pixel, en un diseño todos los tamaños los usario en base a calculos.
+8- Por lo regular tendria una funcion para recargar los estados de recoil si fuera necesario para que solo haga las peticiones necesarias, igual si ubiera paginado, despues de obtener la primera respuesta podrian la siguiente pagina en cola.
 
-## Learn More
+¡Un gusto hacer este pequeño test me lo complique un poco para mostrar un poco de lo que soy capaz!
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
