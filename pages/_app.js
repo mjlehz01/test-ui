@@ -1,6 +1,7 @@
 import { RecoilRoot } from "recoil";
 
 import "tailwindcss/tailwind.css";
+import "primeicons/primeicons.css";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {

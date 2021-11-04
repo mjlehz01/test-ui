@@ -14,6 +14,7 @@ export default async function authAxios(url, params) {
 			headers: paramsTemp.headers,
 			data: paramsTemp || null,
 		});
+		return response.data;
 	} catch (e) {
 		console.log(e.response);
 		return e.response;
