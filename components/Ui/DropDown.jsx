@@ -5,7 +5,7 @@ import Button from "@/Ui/Button";
 
 const DropDown = ({ label, children, show, onClick }) => {
 	return (
-		<div className="w-full">
+		<div className="w-full relative">
 			<Button
 				label={label}
 				styleBtn="btn_dropdown"
@@ -13,7 +13,7 @@ const DropDown = ({ label, children, show, onClick }) => {
 				icon="text-white pi-chevron-down ml-4"
 			/>
 			{show && (
-				<div className="animate-fade-in z-50 absolute bg-white p-1 rounded-lg">
+				<div className="animate-fade-in w-150 left-1/4 z-50 absolute bg-white p-2 rounded-lg">
 					{children}
 				</div>
 			)}

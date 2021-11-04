@@ -22,11 +22,11 @@ const Alert = ({ type, message, onClose }) => {
 			<div
 				className={`bg-black w-fit h-fit animate-puff-in-center rounded-3xl p-6 flex flex-col items-center`}
 			>
-				<i
+				<span
 					className={`pi ${classAnimation} opacity-0 text-5xl ${iconClass[type]}`}
-				></i>
+				></span>
 				<p className="text-lg text-white my-4 text-center">{message}</p>
-				<Button styleBtn="btn_blue" label="Cerrar" onClick={onClose} />
+				<Button styleBtn="btn_blue" label="Cerrar" onClick={onClose} className="px-4 text-lg" />
 			</div>
 		</div>
 	);
